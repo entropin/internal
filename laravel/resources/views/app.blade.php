@@ -15,6 +15,8 @@
 	<script src="/js/libs/backbone.js"></script>
 	<script src="/js/libs/backbone-react-component.js"></script>
 	<script src="/js/libs/uikit.min.js"></script>
+	<script src="/js/libs/moment.js"></script>
+	<script src="/js/libs/moment-with-locales.js"></script>
 
 	<script src="/js/nav.js" type="text/jsx"></script>
 	<script src="/js/labaccess.js" type="text/jsx"></script>

@@ -2,12 +2,13 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/trusty32"
   config.vm.host_name = "internal.dev"
   config.vm.network "private_network", ip: "192.168.32.10"
 
   config.vm.provider "virtualbox" do |v|
     v.memory = 1024
+    v.gui = true
   end
 
   # Enable provisioning with a shell script. Additional provisioners such as

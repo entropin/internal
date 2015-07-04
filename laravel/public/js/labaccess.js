@@ -1,4 +1,3 @@
-
 var LabAccessTable = React.createClass({
     mixins: [Backbone.React.Component.mixin],
 
@@ -7,14 +6,24 @@ var LabAccessTable = React.createClass({
     		<th key={i}>{header}</th>
     	);
     },
+	
+    clickHandler: function(i){
+	console.log(this)
+	jQuery(this.state.collection[i]).show();
+     }
+     ,
 
 	renderRow: function (row, i) {
+		var expires = moment(row.expires.toJSON()).locale("en").endOf("day").fromNow();
 		return (
-	        <tr key={i}>
+		<tbody>
+	        <tr onClick={this.clickHandler.bind(this,i)} key={i}>
 	            <td>{row.key}</td>
 	            <td>{row.name}</td>
-	            <td>{row.expires.toJSON()}</td>
+	            <td>{expires}</td>
 	        </tr>
+		<tr style={{display:'none'}} className="drawer"><td colspan="3"><input type="text"/></td></tr>
+		</tbody>
 		);
 	},
 

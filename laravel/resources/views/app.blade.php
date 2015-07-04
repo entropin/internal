@@ -16,7 +16,8 @@
 	<script src="/js/libs/backbone-react-component.js"></script>
 	<script src="/js/libs/uikit.min.js"></script>
 
-	<script src="/js/keys.js" type="text/jsx"></script>
+	<script src="/js/nav.js" type="text/jsx"></script>
+	<script src="/js/labaccess.js" type="text/jsx"></script>
 	<script src="/js/app.js" type="text/jsx"></script>
 
 	<link rel="stylesheet" href="/css/uikit.min.css" />
